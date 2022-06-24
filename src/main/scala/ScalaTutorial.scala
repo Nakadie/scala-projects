@@ -69,14 +69,81 @@ object ScalaTutorial {
         }while(numberGuess != 15)
 
         printf("you guessed the secret number  %d\n", 15)
-        */
-    val name = "derek"
-    val age = 40
-    val weight = 175.5
 
-    println(s"hello $name")
-    println(f"I am ${age + 1} and weigh $weight%.2f")
+        val name = "derek"
+        val age = 40
+        val weight = 175.5
 
+        println(s"hello $name")
+        println(f"I am ${age + 1} and weigh $weight%.2f")
+
+    var randSent = "I saw a drogon fly by"
+    val randSentArray = randSent.toArray
+    for(v <- randSentArray)
+      println(v)
+    println(randSent.concat("buuf"))
+
+
+    def getSum(num1 : Int = 1, num2 : Int = 1) : Int ={
+      return num1 + num2
+    }
+    println(getSum(num2 =5,num1 =4))
+
+    // use unit when not returning anything.
+    def sayHi() : Unit = {
+      println("hi how are you")
+    }
+    sayHi()
+
+
+    def getSum(args : Int*) : Int = {
+      var sum : Int = 0
+      for(num <- args){
+        sum += num
+      }
+      return sum
+    }
+    println(getSum(1,2,2,4,5,6))
+
+
+    def factorial(num : BigInt) : BigInt = {
+      if(num <= 1)
+        return 1
+      else
+        return num * factorial(num - 1)
+    }
+    println(factorial(4))
+    */
+
+    val favNums = new Array[Int](20)
+
+    val friends = Array("bob", "tom")
+
+    friends(0) = "sue"
+
+    println(friends(0))
+
+    val friends2 = ArrayBuffer[String]()
+
+    friends2.insert(0, "phil")
+
+    friends2 += "mark"
+
+    friends2 ++= Array("susy", "paul")
+
+    friends2.insert(1, "mike")
+
+    friends2.remove(1,2)
+
+    var friend : String = " "
+
+    for(friend <- friends2)
+      println(friend)
+
+    for(j <- 0 to (favNums.length - 1)) {
+      favNums(j) = j
+      println(favNums(j))
+    }
 
 
 
