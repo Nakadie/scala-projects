@@ -1,2 +1,2 @@
 # scala-projects
-Youll find all the code for the puzzles I have done in 
+Youll find all the code for the puzzles I have done in scala-projects/src/main/scala/
