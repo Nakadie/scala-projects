@@ -12,7 +12,7 @@ object Pillars {
       }
       answer
     }
-    println(distance(1, 111, 25))
+    println(distance(1, 111, 25)) // 0
     println(distance(2,20,25)) // 2000
     println(distance(11, 15, 30)) // 15270
   }
