@@ -6,6 +6,8 @@ object twoToOne {
       var answer = s1 + s2
       val letters = answer.split("")
       letters.distinct.sorted.mkString("")
+      //after completing the puzzle I learned you can further optimize this by doing
+      //(s1+s2).distinct.sorted
 
 
 
