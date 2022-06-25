@@ -4,7 +4,7 @@ object removing_elements_array {
   def main(args: Array[String]): Unit = {
     def removeEveryOther[T](list: List[T]) = {
 
-      var answer = for(i<- 0 until list.length by 2)
+      val answer = for(i<- list.indices by 2)
         yield list(i)
       answer.toList
     }

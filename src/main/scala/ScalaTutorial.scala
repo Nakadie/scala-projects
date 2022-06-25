@@ -113,7 +113,7 @@ object ScalaTutorial {
         return num * factorial(num - 1)
     }
     println(factorial(4))
-    */
+
 
     val favNums = new Array[Int](20)
 
@@ -144,9 +144,9 @@ object ScalaTutorial {
       favNums(j) = j
       println(favNums(j))
     }
+    */
 
 
-
-    }
-  }
+    }// end of main
+  } // end of scala tutorial
 
