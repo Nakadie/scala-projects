@@ -44,6 +44,7 @@ object TwoSum extends App{
   println(twoSum(Array(3, 2, 4), 6).mkString("[", ",", "]"))   // ans == [1, 2]
   println(twoSum(Array(3, 3), 6).mkString("[", ",", "]")) // ans == [0, 1]
 }
+/*
 object TwoSum extends App{
   def twoSums(nums: Array[Int], target: Int): Array[Int] = {
     val numsAndIndices = nums.toList.zipWithIndex
@@ -57,4 +58,4 @@ object TwoSum extends App{
     val (idx1, idx2) = results.head
 
     (idx1, idx2)
-    }}
+    }}*/
